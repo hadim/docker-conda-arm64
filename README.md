@@ -1,3 +1,5 @@
+**IMPORTANT: THIS REPO IS DEPRECATED IN FAVOR OF https://github.com/conda-forge/miniforge**
+
 # docker-conda-arm64
 
 Build an Anaconda installer for arm64 (Raspberry Pi 4) on a Linux x86_64.
