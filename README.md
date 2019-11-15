@@ -11,12 +11,7 @@ docker run --rm --privileged multiarch/qemu-user-static:register --reset --crede
 docker-compose run conda_builder
 ```
 
-Once in the base, do:
-
-```bash
-cd /construct
-constructor --platform=linux-aarch64 .
-```
+The installer is located in the same folder as this repo.
 
 ## LICENSE
 
