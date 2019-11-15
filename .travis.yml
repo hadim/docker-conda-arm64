@@ -9,6 +9,10 @@ matrix:
     env:
       - ARCH=aarch64
 
+  - os: linux
+    env:
+      - ARCH=amd64
+
 before_install:
   # Enable experimental features (needed for squash)
   - sudo cp docker_daemon_config.json /etc/docker/daemon.json
