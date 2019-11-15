@@ -8,7 +8,8 @@ See https://github.com/conda-forge/conda-forge.github.io/issues/871 for the deta
 
 ```bash
 docker run --rm --privileged multiarch/qemu-user-static:register --reset --credential yes
-docker-compose run conda_builder
+docker build -t docker_constructor -f Dockerfile.aarch64 .
+docker run --rm -ti --mount type=bind,source="$(pwd)",target=/construct docker_constructor
 ```
 
 The installer is located in the same folder as this repo.
